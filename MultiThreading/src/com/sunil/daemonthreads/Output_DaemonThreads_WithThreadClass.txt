@@ -1,0 +1,28 @@
+/*
+* Thread-1 is User Thread, Thread-2 is Daemon Thread
+* First task that was executing in Thread-1 has finished and died its natural death.
+* While Second task that was running in Thread-2 could not finsh and program has stopped abruptly.
+* As Thread-1 got finished, JVM kills Thread-2 abruptly.
+*/
+
+[main]Main thread starts here...
+[main]Main thread ends here...
+##### [Thread-1,USER] <LoopTaskD1> STARTING ########
+##### [Thread-2,DAEMON] <LoopTaskD2> STARTING ########
+[Thread-2,DAEMON] <LoopTaskD2>TICK TICK - 1
+[Thread-1,USER] <LoopTaskD1>TICK TICK - 1
+[Thread-1,USER] <LoopTaskD1>TICK TICK - 2
+[Thread-2,DAEMON] <LoopTaskD2>TICK TICK - 2
+[Thread-1,USER] <LoopTaskD1>TICK TICK - 3
+[Thread-1,USER] <LoopTaskD1>TICK TICK - 4
+[Thread-2,DAEMON] <LoopTaskD2>TICK TICK - 3
+[Thread-1,USER] <LoopTaskD1>TICK TICK - 5
+[Thread-1,USER] <LoopTaskD1>TICK TICK - 6
+[Thread-2,DAEMON] <LoopTaskD2>TICK TICK - 4
+[Thread-1,USER] <LoopTaskD1>TICK TICK - 7
+[Thread-1,USER] <LoopTaskD1>TICK TICK - 8
+[Thread-2,DAEMON] <LoopTaskD2>TICK TICK - 5
+[Thread-1,USER] <LoopTaskD1>TICK TICK - 9
+[Thread-1,USER] <LoopTaskD1>TICK TICK - 10
+[Thread-2,DAEMON] <LoopTaskD2>TICK TICK - 6
+##### [Thread-1,USER] <LoopTaskD1> COMPLETED ########

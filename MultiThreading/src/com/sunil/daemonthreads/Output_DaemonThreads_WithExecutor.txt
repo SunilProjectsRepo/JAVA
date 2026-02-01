@@ -1,0 +1,39 @@
+/*
+* User Thread 1 & 3 finished, the program has ended abruptly
+* killing the Daemon Thread 2 & 4 along with it.
+*/
+
+[main]Main thread starts here...
+[main]Main thread ends here...
+##### [PoolWorker-2,DAEMON] <LoopTaskD2> STARTING ########
+##### [PoolWorker-4,DAEMON] <LoopTaskD4> STARTING ########
+##### [PoolWorker-3,USER] <LoopTaskD3> STARTING ########
+##### [PoolWorker-1,USER] <LoopTaskD1> STARTING ########
+[PoolWorker-4,DAEMON] <LoopTaskD4>TICK TICK - 1
+[PoolWorker-2,DAEMON] <LoopTaskD2>TICK TICK - 1
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 1
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 1
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 2
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 2
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 3
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 3
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 4
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 4
+[PoolWorker-4,DAEMON] <LoopTaskD4>TICK TICK - 2
+[PoolWorker-2,DAEMON] <LoopTaskD2>TICK TICK - 2
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 5
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 5
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 6
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 6
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 7
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 7
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 8
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 8
+[PoolWorker-4,DAEMON] <LoopTaskD4>TICK TICK - 3
+[PoolWorker-2,DAEMON] <LoopTaskD2>TICK TICK - 3
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 9
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 9
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 10
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 10
+##### [PoolWorker-3,USER] <LoopTaskD3> COMPLETED ########
+##### [PoolWorker-1,USER] <LoopTaskD1> COMPLETED ########

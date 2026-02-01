@@ -1,0 +1,54 @@
+/*
+* Task-1 = 100, Task-2 = 200, Task-3 = 300, Task-4 = 400
+* Even are Daemon Threads
+* Task-1 (User) completes, Task-2 (Daemon) also completes
+* Task-3 (User) completes, and then program terminates abruptly
+* As no more user thread exists and Task-4 didn't complete the process
+*/
+[main]Main thread starts here...
+[main]Main thread ends here...
+##### [PoolWorker-1,USER] <LoopTaskD1> STARTING ########
+##### [PoolWorker-4,DAEMON] <LoopTaskD4> STARTING ########
+##### [PoolWorker-3,USER] <LoopTaskD3> STARTING ########
+##### [PoolWorker-2,DAEMON] <LoopTaskD2> STARTING ########
+[PoolWorker-4,DAEMON] <LoopTaskD4>TICK TICK - 1
+[PoolWorker-2,DAEMON] <LoopTaskD2>TICK TICK - 1
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 1
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 1
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 2
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 3
+[PoolWorker-2,DAEMON] <LoopTaskD2>TICK TICK - 2
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 2
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 4
+[PoolWorker-4,DAEMON] <LoopTaskD4>TICK TICK - 2
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 5
+[PoolWorker-2,DAEMON] <LoopTaskD2>TICK TICK - 3
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 6
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 3
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 7
+[PoolWorker-2,DAEMON] <LoopTaskD2>TICK TICK - 4
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 8
+[PoolWorker-4,DAEMON] <LoopTaskD4>TICK TICK - 3
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 9
+[PoolWorker-2,DAEMON] <LoopTaskD2>TICK TICK - 5
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 4
+[PoolWorker-1,USER] <LoopTaskD1>TICK TICK - 10
+[PoolWorker-2,DAEMON] <LoopTaskD2>TICK TICK - 6
+##### [PoolWorker-1,USER] <LoopTaskD1> COMPLETED ########
+[PoolWorker-4,DAEMON] <LoopTaskD4>TICK TICK - 4
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 5
+[PoolWorker-2,DAEMON] <LoopTaskD2>TICK TICK - 7
+[PoolWorker-2,DAEMON] <LoopTaskD2>TICK TICK - 8
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 6
+[PoolWorker-4,DAEMON] <LoopTaskD4>TICK TICK - 5
+[PoolWorker-2,DAEMON] <LoopTaskD2>TICK TICK - 9
+[PoolWorker-2,DAEMON] <LoopTaskD2>TICK TICK - 10
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 7
+[PoolWorker-4,DAEMON] <LoopTaskD4>TICK TICK - 6
+##### [PoolWorker-2,DAEMON] <LoopTaskD2> COMPLETED ########
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 8
+[PoolWorker-4,DAEMON] <LoopTaskD4>TICK TICK - 7
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 9
+[PoolWorker-3,USER] <LoopTaskD3>TICK TICK - 10
+[PoolWorker-4,DAEMON] <LoopTaskD4>TICK TICK - 8
+##### [PoolWorker-3,USER] <LoopTaskD3> COMPLETED ########

@@ -1,0 +1,29 @@
+[main]Main thread starts here...
+##### [PoolWorker-2] <ValueReturningTaskA-1> STARTING ########
+##### [PoolWorker-1] <LoopTaskC1> STARTING ########
+[main] ITR-1 -> Is 'LoopTaskC-1' done = false
+[PoolWorker-1] <LoopTaskC1>TICK TICK - 1
+[main] ITR-1 -> Is 'CalcTaskA-1' done = false
+[PoolWorker-1] <LoopTaskC1>TICK TICK - 2
+[PoolWorker-1] <LoopTaskC1>TICK TICK - 3
+[PoolWorker-1] <LoopTaskC1>TICK TICK - 4
+[PoolWorker-1] <LoopTaskC1>TICK TICK - 5
+[PoolWorker-1] <LoopTaskC1>TICK TICK - 6
+[PoolWorker-1] <LoopTaskC1>TICK TICK - 7
+[PoolWorker-1] <LoopTaskC1>TICK TICK - 8
+[PoolWorker-1] <LoopTaskC1>TICK TICK - 9
+[PoolWorker-1] <LoopTaskC1>TICK TICK - 10
+##### [PoolWorker-1] <LoopTaskC1> COMPLETED ########
+[main] ITR-2 -> Is 'LoopTaskC-1' done = true
+[main] ITR-2 -> Is 'CalcTaskA-1' done = true
+[main] ITR-3 -> Is 'LoopTaskC-1' done = true
+[main] ITR-3 -> Is 'CalcTaskA-1' done = true
+[main] ITR-4 -> Is 'LoopTaskC-1' done = true
+[main] ITR-4 -> Is 'CalcTaskA-1' done = true
+[main] ITR-5 -> Is 'LoopTaskC-1' done = true
+[main] ITR-5 -> Is 'CalcTaskA-1' done = true
+$$$$ [main] Retrieving results now .... $$$$$
+[main] 'LoopTaskC-1' result = null
+##### [PoolWorker-2] <ValueReturningTaskA-1> CALCULATION COMPLETED ########
+[main] 'CalcTaskA-1' result = 7
+[main]Main thread ends here...
