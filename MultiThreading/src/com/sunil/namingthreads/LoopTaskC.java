@@ -16,7 +16,7 @@ public class LoopTaskC implements Runnable{
 			System.out.println("[" +currentThreadName+"] <"+taskId+">"+"TICK TICK - "+ i);
 			try {
 				//Task will sleep for random period between 0 - 1000 seconds
-				TimeUnit.MILLISECONDS.sleep((long)Math.random()*1000);
+				TimeUnit.MILLISECONDS.sleep((long)Math.random()*500);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

@@ -1,0 +1,16 @@
+/*
+* Here, the results from the tasks are printed
+* in the sequence in which they are completed.
+*/
+
+[main]Main thread starts here...
+[main]Main thread ends here...
+##### [Thread-3] <ValueReturningTaskA-3> STARTING ########
+##### [Thread-2] <ValueReturningTaskA-2> STARTING ########
+##### [Thread-1] <ValueReturningTaskA-1> STARTING ########
+Result for task-1 = 5
+##### [Thread-1] <ValueReturningTaskA-1> CALCULATION COMPLETED ########
+Result for task-3 = 9
+##### [Thread-3] <ValueReturningTaskA-3> CALCULATION COMPLETED ########
+Result for task-2 = 7
+##### [Thread-2] <ValueReturningTaskA-2> CALCULATION COMPLETED ########

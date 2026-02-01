@@ -1,0 +1,33 @@
+/*
+* 1st task is 100ms, 2nd task is 1000ms and 3rd task is 500ms
+* Here, main thread will first enter wait state for the 1st task.
+* After the 1st task is done, the main thread will come out of the wait state 
+* and get the result. Then the main thread calls the getter on the 2nd task
+* As the 2nd task has a bigger sleep time, it will still be sleeping or executing.
+* So, the main thread should enter into wait state for the 2nd task, 
+* while for 3rd task it should get the result directly without waiting.
+* NOTE: Even though the 3rd task had finished earlier than the 2nd one, its result was still printed last.
+* Because, if the main thread gets stuck on waiting for a result for a task, then as per the current code logic, 
+* the results from the subsequent tasks also cannot be processed till the time the main thread comes out of its waiting state. 
+* In other words, the results are processed only in the sequence in which we have coded to retrieve the results.
+*
+* What if we want to process the results from the tasks in the sequence in which they are completed
+* rather than the sequence in which we are retrieving the results?
+*/ 
+
+[main]Main thread starts here...
+##### [Thread-3] <ValueReturningTaskA-3> STARTING ########
+[main] WAITING for result from ValueReturningTaskA-1...
+##### [Thread-2] <ValueReturningTaskA-2> STARTING ########
+##### [Thread-1] <ValueReturningTaskA-1> STARTING ########
+[Thread-1] <ValueReturningTaskA-1> NOTIFYING
+##### [Thread-1] <ValueReturningTaskA-1> CALCULATION COMPLETED ########
+Result-1 = 5
+[main] WAITING for result from ValueReturningTaskA-2...
+[Thread-3] <ValueReturningTaskA-3> NOTIFYING
+##### [Thread-3] <ValueReturningTaskA-3> CALCULATION COMPLETED ########
+[Thread-2] <ValueReturningTaskA-2> NOTIFYING
+##### [Thread-2] <ValueReturningTaskA-2> CALCULATION COMPLETED ########
+Result-2 = 7
+Result-3 = 9
+[main]Main thread ends here...

@@ -1,0 +1,24 @@
+[main]Main thread starts here...
+##### <TASK-1> STARTING ########
+##### [pool-1-thread-1] <ValueReturningTaskA-1> STARTING ########
+##### [pool-1-thread-3] <ValueReturningTaskA-3> STARTING ########
+##### [pool-1-thread-2] <ValueReturningTaskA-2> STARTING ########
+<1>TICK TICK - 1
+<1>TICK TICK - 2
+<1>TICK TICK - 3
+<1>TICK TICK - 4
+<1>TICK TICK - 5
+<1>TICK TICK - 6
+<1>TICK TICK - 7
+<1>TICK TICK - 8
+<1>TICK TICK - 9
+<1>TICK TICK - 10
+##### <TASK-1> COMPLETED ########
+=====TaskResult [taskId=LoopTask-1, result=999]=====
+##### [pool-1-thread-3] <ValueReturningTaskA-3> CALCULATION COMPLETED ########
+=====TaskResult [taskId=ValueReturningTaskA-3, result=9]=====
+##### [pool-1-thread-2] <ValueReturningTaskA-2> CALCULATION COMPLETED ########
+=====TaskResult [taskId=ValueReturningTaskA-2, result=7]=====
+##### [pool-1-thread-1] <ValueReturningTaskA-1> CALCULATION COMPLETED ########
+=====TaskResult [taskId=ValueReturningTaskA-1, result=5]=====
+[main]Main thread ends here...

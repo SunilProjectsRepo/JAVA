@@ -1,0 +1,32 @@
+/*
+* We got the correct results.
+* Check the output carefully, we see that the main thread is put in wait state only
+* for the first task and after the first task is done, it wakes up the main thread
+* and then the result from the first task is printed by the main thread.
+* The result for second and third tasks are also printed out immediately after the first task results.
+* What were the second and third tasks are not put into the wait state at all?
+* The answer is timing.
+* First task sleeps for 2000 ms, while 2nd  sleep for 1000 ms and 3rd tasks sleep for 500ms only.
+* So, by the time first task woke up from its sleep, the scond and third tasks had already woken up
+* from their sleeps and finished the calculation.
+* After finishing their calculations, they had set their done variable to true.
+* So, main thread when reaches the stmt where it calls the getter on the second task, it does not go into wait state 
+* and get the results immediately. Same for the 3rd task as well.
+* Try reducing the sleep time for the first task to 100 ms and see what happens.
+*/
+
+[main]Main thread starts here...
+##### [Thread-2] <ValueReturningTaskA-2> STARTING ########
+##### [Thread-1] <ValueReturningTaskA-1> STARTING ########
+[main] WAITING for result from ValueReturningTaskA-1...
+##### [Thread-3] <ValueReturningTaskA-3> STARTING ########
+[Thread-3] <ValueReturningTaskA-3> NOTIFYING
+##### [Thread-3] <ValueReturningTaskA-3> CALCULATION COMPLETED ########
+[Thread-2] <ValueReturningTaskA-2> NOTIFYING
+##### [Thread-2] <ValueReturningTaskA-2> CALCULATION COMPLETED ########
+[Thread-1] <ValueReturningTaskA-1> NOTIFYING
+##### [Thread-1] <ValueReturningTaskA-1> CALCULATION COMPLETED ########
+Result-1 = 5
+Result-2 = 7
+Result-3 = 9
+[main]Main thread ends here...
