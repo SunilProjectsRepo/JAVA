@@ -1,0 +1,25 @@
+/*
+* All type of class from FirstTechnique to FifthTechnique gives the below same output.
+*/
+Main thread starts here...
+Main thread ends here...
+<2>TICK TICK - 1
+<1>TICK TICK - 1
+<2>TICK TICK - 2
+<1>TICK TICK - 2
+<2>TICK TICK - 3
+<1>TICK TICK - 3
+<2>TICK TICK - 4
+<1>TICK TICK - 4
+<2>TICK TICK - 5
+<1>TICK TICK - 5
+<2>TICK TICK - 6
+<1>TICK TICK - 6
+<2>TICK TICK - 7
+<1>TICK TICK - 7
+<2>TICK TICK - 8
+<1>TICK TICK - 8
+<2>TICK TICK - 9
+<1>TICK TICK - 9
+<2>TICK TICK - 10
+<1>TICK TICK - 10

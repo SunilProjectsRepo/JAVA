@@ -1,0 +1,26 @@
+[main]Main thread starts here...
+[main] Main thread ends here...
+##### [Worker-1] <LoopTaskA1> STARTING ########
+##### [Worker-2] <LoopTaskA2> STARTING ########
+[Worker-1] <LoopTaskA1>TICK TICK - 1
+[Worker-2] <LoopTaskA2>TICK TICK - 1
+[Worker-1] <LoopTaskA1>TICK TICK - 2
+[Worker-2] <LoopTaskA2>TICK TICK - 2
+[Worker-1] <LoopTaskA1>TICK TICK - 3
+[Worker-2] <LoopTaskA2>TICK TICK - 3
+[Worker-2] <LoopTaskA2>TICK TICK - 4
+[Worker-1] <LoopTaskA1>TICK TICK - 4
+[Worker-2] <LoopTaskA2>TICK TICK - 5
+[Worker-1] <LoopTaskA1>TICK TICK - 5
+[Worker-1] <LoopTaskA1>TICK TICK - 6
+[Worker-1] <LoopTaskA1>TICK TICK - 7
+[Worker-1] <LoopTaskA1>TICK TICK - 8
+[Worker-2] <LoopTaskA2>TICK TICK - 6
+[Worker-1] <LoopTaskA1>TICK TICK - 9
+[Worker-1] <LoopTaskA1>TICK TICK - 10
+[Worker-2] <LoopTaskA2>TICK TICK - 7
+[Worker-2] <LoopTaskA2>TICK TICK - 8
+[Worker-2] <LoopTaskA2>TICK TICK - 9
+[Worker-2] <LoopTaskA2>TICK TICK - 10
+##### [Worker-1] <LoopTaskA1> COMPLETED ########
+##### [Worker-2] <LoopTaskA2> COMPLETED ########

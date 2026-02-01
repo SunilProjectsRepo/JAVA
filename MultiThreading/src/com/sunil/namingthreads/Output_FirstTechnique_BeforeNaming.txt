@@ -1,0 +1,31 @@
+/*
+* Thread names are getting printed like Thread-0, Thread-1.
+* These thread names have been assigned to the threads automatically by the JVM.
+*/
+
+[main]Main thread starts here...
+[main] Main thread ends here...
+##### [Thread-1] <LoopTaskA2> STARTING ########
+##### [Thread-0] <LoopTaskA1> STARTING ########
+[Thread-1] <LoopTaskA2>TICK TICK - 1
+[Thread-0] <LoopTaskA1>TICK TICK - 1
+[Thread-0] <LoopTaskA1>TICK TICK - 2
+[Thread-0] <LoopTaskA1>TICK TICK - 3
+[Thread-0] <LoopTaskA1>TICK TICK - 4
+[Thread-0] <LoopTaskA1>TICK TICK - 5
+[Thread-0] <LoopTaskA1>TICK TICK - 6
+[Thread-0] <LoopTaskA1>TICK TICK - 7
+[Thread-0] <LoopTaskA1>TICK TICK - 8
+[Thread-0] <LoopTaskA1>TICK TICK - 9
+[Thread-0] <LoopTaskA1>TICK TICK - 10
+[Thread-1] <LoopTaskA2>TICK TICK - 2
+[Thread-1] <LoopTaskA2>TICK TICK - 3
+[Thread-1] <LoopTaskA2>TICK TICK - 4
+##### [Thread-0] <LoopTaskA1> COMPLETED ########
+[Thread-1] <LoopTaskA2>TICK TICK - 5
+[Thread-1] <LoopTaskA2>TICK TICK - 6
+[Thread-1] <LoopTaskA2>TICK TICK - 7
+[Thread-1] <LoopTaskA2>TICK TICK - 8
+[Thread-1] <LoopTaskA2>TICK TICK - 9
+[Thread-1] <LoopTaskA2>TICK TICK - 10
+##### [Thread-1] <LoopTaskA2> COMPLETED ########
